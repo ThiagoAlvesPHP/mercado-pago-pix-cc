@@ -1,12 +1,11 @@
 <?php
 include_once 'vendor/autoload.php';
-
-$access_token = "ACCESS_TOKEN";
+include_once 'config.php';
 
 if(isset($_POST)){
     if(isset($_POST['pix'])){
         if($_POST['pix']){
-            MercadoPago\SDK::setAccessToken($access_token);
+            MercadoPago\SDK::setAccessToken(ACCESS_TOKEN);
 
             $payment = new MercadoPago\Payment();
             $payment->description = $_POST['description'];
