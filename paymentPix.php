@@ -1,7 +1,7 @@
 <?php
 include_once 'vendor/autoload.php';
 
-$access_token = "TEST-3797020972438326-052422-ce17294d3464630399bf2bb218a700b9-490976225";
+$access_token = "ACCESS_TOKEN";
 
 if(isset($_POST)){
     if(isset($_POST['pix'])){
